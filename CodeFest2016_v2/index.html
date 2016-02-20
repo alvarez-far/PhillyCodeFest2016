@@ -1,43 +1,38 @@
 ﻿<!DOCTYPE html>
+<html>
+    <head>
+    <!-- ********** metas *************** -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>Code Fest</title>
+    <!-- ********************   External Links   ********************  -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="phillystyle.css">
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.2/mapbox-gl.css' rel='stylesheet' />
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
 
-    <meta charset="utf-8" />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.2/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.2/mapbox-gl.css' rel='stylesheet' />
 
-    <title>Code Fest</title>
-    <!-- -->
+    <!-- Scripts -->
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.2/mapbox-gl.js'></script>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+    </head>
+    <body>
+        <header></header>
+        <h1>PhillyCodeFest 2016</h1>
+        <hr/>
 
-        #map {
-            position: absolute;
-            top: 200px;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+        <div id='map'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoia3lsaW1hbmhhcm8iLCJhIjoic1VtaVk1VSJ9.XhSycFXpnjkaUGikAsdJxw';
+            var map = new mapboxgl.Map({
+                container: 'map', // container id
+                style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
+                center: [-74.50, 40], // starting position
+                zoom: 9 // starting zoom
+            });
+        </script>
+        
+        <footer></footer>
 
-</head>
-<body>
-    <h1>PhillyCodeFest 2016</h1>
-    <hr />
-
-    <div id='map'></div>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoia3lsaW1hbmhhcm8iLCJhIjoic1VtaVk1VSJ9.XhSycFXpnjkaUGikAsdJxw';
-        var map = new mapboxgl.Map({
-            container: 'map', // container id
-            style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
-            center: [-74.50, 40], // starting position
-            zoom: 9 // starting zoom
-        });
-    </script>
-</body>
+    </body>
 </html>

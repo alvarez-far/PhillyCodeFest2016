@@ -52,7 +52,7 @@ function loadMap() {
             var district = prop.DISTRICT;
             var districtData = councildata.district[district - 1];
             //popup markup
-            var popup = "<h1> Distirct " + district + "</h1>";
+            var popup = "<h1> District " + district + "</h1>";
             popup += "<div style=\"innerdiv\" >";
             popup += "<p><strong>" + districtData.councilman + " (" + districtData.affiliation + ")</strong></p>";
             popup += "<p>" + districtData.location + "</p>";

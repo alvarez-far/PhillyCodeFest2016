@@ -20,14 +20,14 @@
 {
     display:table-cell;
     position:absolute;
-    top:0;
+    top:6%;
     left:0;
     bottom:0;
     width: 360px;
-    height: 100%;
+    height: 94%;
     overflow:hidden;
 
-    background-color:#666; /*bwahahaha!!*/
+    background-color:#333; /*bwahahaha!!*/
     color:#eee;
 }
 
@@ -41,32 +41,57 @@
 {
     text-decoration: none;
     list-style-type:none;
-
     padding:10px;
     margin-top:0px;
-
     font-size: 1.4em;
     font-weight:bold;
 }
-#nav li.selected
-{
-    background-color:#eee;
-    color:#666;
-}
+
 
 #main
 {
     position:fixed;
     display:table-cell;
-    top:0;
+    top:6%;
     right:0;
     left:360px;
     bottom:0;
-
     background-color:#ff6a00;
 }
 
 .innerdiv
 {
     padding: 15px;
+}
+.innerdiv img{
+    height: 540px;
+    width: 540px;
+}
+.logo{
+    margin-left: -7%;
+    margin-top: -1%;
+    position: fixed;
+}
+
+.innerdiv li:hover{
+    background-color:#eee;
+    color:#666;
+}
+
+.innerdiv li:visited{
+    background-color: #222;
+    color: #000;
+
+}
+
+
+#mapNav{
+    position: fixed;
+    background-color: #fff;
+}
+
+#mapNav a:hover{
+color: #fff;
+text-shadow: 6px 6px 9px #000;
+background-color: #333;
 }

@@ -1,0 +1,72 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#map
+{
+    /*
+    width: 800px;
+    top: 0px;
+    */
+    position:absolute;
+    width:100%;
+    top:0;
+    bottom:0;   
+}
+
+#nav
+{
+    display:table-cell;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width: 360px;
+    height: 100%;
+    overflow:hidden;
+
+    background-color:#666; /*bwahahaha!!*/
+    color:#eee;
+}
+
+#nav ul
+{
+    padding:0;
+    margin:0;
+}
+
+#nav li
+{
+    text-decoration: none;
+    list-style-type:none;
+
+    padding:10px;
+    margin-top:0px;
+
+    font-size: 1.4em;
+    font-weight:bold;
+}
+#nav li.selected
+{
+    background-color:#eee;
+    color:#666;
+}
+
+#main
+{
+    position:fixed;
+    display:table-cell;
+    top:0;
+    right:0;
+    left:360px;
+    bottom:0;
+
+    background-color:#ff6a00;
+}
+
+.innerdiv
+{
+    padding: 15px;
+}

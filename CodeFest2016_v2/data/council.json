@@ -1,0 +1,86 @@
+{
+"district":
+[
+
+{
+"district":"1",
+"councilman":"Mark Squilla",
+"affiliation":"D",
+"location":"City Hall, Room 332",
+"phone":"(215) 686-3458/3459"
+},
+
+{
+"district":"2",
+"councilman":"Kenyatta Johnson",
+"affiliation":"D",
+"location":"City Hall, Room 580",
+"phone":"(215) 686-3412/3413"
+},
+
+{
+"district":"3",
+"councilman":"Jannie L. Blackwell",
+"affiliation":"D",
+"location":"City Hall, Room 408",
+"phone":"(215) 686-3418/3419"
+},
+
+{
+"district":"4",
+"councilman":"Curtis Jones, Jr.",
+"affiliation":"D",
+"location":"City Hall, Room 404",
+"phone":"(215) 686-3416/3417"
+},
+
+{
+"district":"5",
+"councilman":"Darrell L. Clarke",
+"affiliation":"D",
+"location":"City Hall, Room 313",
+"phone":"(215) 686-3442/3443"
+},
+
+{
+"district":"6",
+"councilman":"Bobby Henon",
+"affiliation":"D",
+"location":"City Hall, Room 484",
+"phone":"(215) 686-3444/3445"
+},
+
+{
+"district":"7",
+"councilman":"Maria D. Quiñones-Sánchez",
+"affiliation":"D",
+"location":"City Hall, Room 592",
+"phone":"(215) 686-3448/3449"
+},
+
+{
+"district":"8",
+"councilman":"Cindy Bass",
+"affiliation":"D",
+"location":"City Hall, Room 594",
+"phone":"(215) 686-3424/3425"
+},
+
+{
+"district":"9",
+"councilman":"Cherelle L. Parker",
+"affiliation":"D",
+"location":"City Hall, Room 577",
+"phone":"(215) 686-3454/3455"
+},
+
+{
+"district":"10",
+"councilman":"Brian J. O'Neill",
+"affiliation":"R",
+"location":"City Hall, Room 562",
+"phone":"(215) 686-3422/3423"
+}
+
+]
+}

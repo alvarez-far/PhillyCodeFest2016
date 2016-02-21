@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>PhillyDistrictMap</title>
+    <!-- [NOTES] -->
+
+
+    <!-- [Principe Stuff] -->
+    <!-- STYLESHEETS & BOOTSTRAP LIBRARIES -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- [PRODUCTION STYLESHEET] -->
+    <!--<link rel="stylesheet" type="text/css" href="phillystyle.css">-->
+
+    <!-- EXTERNAL LIBRARIES -->
+    <!-- MapBox JS -->
+    <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.0.js"></script>
+
+    <!-- [TEST CSS] -->
+    <link rel="stylesheet" type="text/css" href="ignore.css" />
+
+</head>
+
+
+<body>
+    <div id="nav">
+        <div class="innerdiv">
+            <h1>PhillyDistrictMap</h1>
+            <hr />
+            <ul>
+                <li class="selected">City Districs</li>
+                <li>US Congressional Ditricts</li>
+            </ul>
+        </div>
+    </div>
+    <!-- [MAP] -->
+    <div id="main">
+        <div id='map'></div>
+    </div>
+    <script>
+
+        function loadMap() {
+            //LOAD MapBox Map
+            //Carlos Alvarez MapBox API KEY
+            L.mapbox.accessToken = 'pk.eyJ1Ijoia3lsaW1hbmhhcm8iLCJhIjoic1VtaVk1VSJ9.XhSycFXpnjkaUGikAsdJxw';
+
+            //39° 57′ 0″ N, 75° 10′ 0″ W
+            var coordinates = [39.95, -75.166667];
+            var map = L.mapbox.map('map', 'mapbox.streets')
+                .setView(coordinates, 12);
+
+            //LOAD geoJSON
+            //var currentLayer = "geo/US_Congressional_2012.geojson";
+            var currentLayer = "geo/Council_Districts_2016.geojson";
+            $.getJSON(currentLayer, function (data) {
+                //ADD DISTRICTS LAYER
+                map.featureLayer.setGeoJSON(data);
+            });
+        }
+
+        //[DEBUG]: Single point of failure (Disable Map HERE)
+        loadMap();
+    </script>
+    <!-- [END of MAP] -->
+</body>
+</html>

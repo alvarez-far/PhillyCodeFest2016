@@ -5,7 +5,11 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F8F2773-0924-4E6E-86F9-908446B23161}"
 	ProjectSection(SolutionItems) = preProject
+		geo\Council_Districts_2016.geojson = geo\Council_Districts_2016.geojson
+		ignore.css = ignore.css
 		index.html = index.html
+		map.html = map.html
+		geo\US_Congressional_2012.geojson = geo\US_Congressional_2012.geojson
 	EndProjectSection
 EndProject
 Global
